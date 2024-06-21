@@ -18,9 +18,9 @@ function App() {
         <Route path='about' element={<About />}></Route>
         <Route path='order-summary' element={<OrderSummary />}></Route>
         <Route path='products' element={<Product />}>
+          <Route index element={<FeaturedProducts />}/>
           <Route path='featured' element={<FeaturedProducts />} />
           <Route path='new' element={<NewProducts />} />
-        
         </Route>
         <Route path='*' element={<NoMatch />}></Route>
     </Routes>
