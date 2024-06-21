@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import React from 'react'
 
@@ -18,6 +18,9 @@ function Navbar() {
         </NavLink>
         <NavLink style={navLinkStyles} to='/about'>
             About
+        </NavLink>
+        <NavLink style={navLinkStyles} to='/products'>
+            Products
         </NavLink>
     </nav>
   )
