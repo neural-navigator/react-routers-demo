@@ -10,7 +10,7 @@ const Login = () => {
 
     const handleLogin = () => {
         auth.login(user)
-        navigate('/')
+        navigate('/', {replace: true})
     }
 
     return (
